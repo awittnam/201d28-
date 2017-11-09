@@ -24,6 +24,18 @@ var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
     alert('Sorry, I was born and bred in Illinois');
     }
 
+//question 3
+var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
+  console.log('users myDog:' + myDog);
+
+    if (myDog === 'yes' || myDog ==='y') {
+    alert(userName + ', this is getting spooky.  You are amazing, that\'s correct!');
+    } else {
+    alert('Negative, ' + userName + ', my dog Eva is a Golden Retriever.');
+    }
+
+
+
 // var kids = prompt('how many kids do you have?');
 // console.log('number of kids:', kids);
 //
