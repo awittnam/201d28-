@@ -2,11 +2,7 @@
 
 var userName = prompt('What is you\'re name?')
 console.log('user\'s name:', userName)
-  alert('Hello ' + userName + ', it\'s nice to meet you.  In order for you to get to know me a little bit we are going to play a guessing game.  Let\'s get started! ')
-
-
-
-
+  alert('Hello ' + userName + ', it\'s nice to meet you.  In order for you to get to know me a little bit we are going to play a guessing game.  Let\'s get started! ');
 
 
 
