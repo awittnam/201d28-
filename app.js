@@ -16,9 +16,10 @@ function questionOne () {
   }
 }
 questionOne();
-
+h
 //question 2
-var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
+function questionTwo () {
+  var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
   console.log('user where:' + where);
 
     if (where === 'yes' || where === 'y') {
@@ -26,6 +27,9 @@ var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
     } else {
     alert('Sorry, I was born and bred in Illinois');
     }
+  }
+
+questionTwo();
 
 //question 3
 var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
