@@ -34,6 +34,15 @@ var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
     alert('Negative, ' + userName + ', my dog Eva is a Golden Retriever.');
     }
 
+//question 4
+var boat = prompt('Did I live on a houseboat for the last two summers?').toLowerCase();
+  console.log('users boat:' + boat);
+
+    if (boat === 'yes' || boat === 'y') {
+    alert('Gotch ya ' + userName + '!  I\'ve newer lived on a boat.')
+    } else {
+    alert('You\'re right ' + userName + ', well done.');
+    }
 
 
 // var kids = prompt('how many kids do you have?');
