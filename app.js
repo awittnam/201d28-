@@ -8,12 +8,21 @@ console.log('user\'s name:', userName)
 var age = prompt(userName + ', do you think I look older than 40 years old?').toLowerCase();
 console.log('users age:' + age);
 
-  if ((age === 'yes') || (age === 'y')) {
+  if (age === 'yes' || age === 'y') {
     alert('Gotch ya ' + userName + '!  I am 38, so I\'m almost there.')
     } else {
     alert('Thank you ' + userName + '.');
     }
 
+//question 2
+var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
+  console.log('user where:' + where);
+
+    if (where === 'yes' || where === 'y') {
+    alert('Wow ' + userName + ' , you nailed that one!');
+    } else {
+    alert('Sorry, I was born and bred in Illinois');
+    }
 
 // var kids = prompt('how many kids do you have?');
 // console.log('number of kids:', kids);
