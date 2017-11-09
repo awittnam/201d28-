@@ -39,11 +39,20 @@ var boat = prompt('Did I live on a houseboat for the last two summers?').toLower
   console.log('users boat:' + boat);
 
     if (boat === 'yes' || boat === 'y') {
-    alert('Gotch ya ' + userName + '!  I\'ve newer lived on a boat.')
+    alert('Gotch ya ' + userName + '!  I\'ve never lived on a boat.')
     } else {
     alert('You\'re right ' + userName + ', well done.');
     }
 
+//question 5
+var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
+  console.log('users music:' + music);
+
+    if (music === 'yes' || music === 'y') {
+    alert('You know it ' + userName + '!')
+    } else {
+    alert('Sorry ' + userName + ', but I\'m classis rock through and through.');
+    }
 
 // var kids = prompt('how many kids do you have?');
 // console.log('number of kids:', kids);
