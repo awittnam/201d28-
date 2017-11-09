@@ -83,3 +83,17 @@ for (var i=0; i<4; i++){
 //TO DO:
 //Need seventh question
 //-add score counter to show overall score
+var states = ['illinois', 'texas', 'florida'];
+for (var j=6; j>0;j--){
+  var guessStates= prompt('Let\'s see if you can guess a state that I\'ve lived in.').toLowerCase();
+  console.log(guessStates);
+  if(states.includes(guessStates)){
+    console.log('guessed', state);
+    alert('Wow! You are correct!');
+    alert('I have lived in Illinois, Texas, and Florida!');
+break;
+  }else {
+    console.log('false', guessStates);
+    alert('Wrong, try again. You have 6 total attempts, you  have ' + (j-1) + ' attempts remaining.');
+  }
+}
