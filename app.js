@@ -5,14 +5,17 @@ console.log('user\'s name:', userName)
   alert('Hello ' + userName + ', it\'s nice to meet you.  In order for you to get to know me a little bit we are going to play a guessing game.  Let\'s get started! ');
 
 //question 1
-var age = prompt(userName + ', do you think I look older than 40 years old?').toLowerCase();
-console.log('users age:' + age);
+function questionOne () {
+  var age = prompt(userName + ', do you think I look older than 40 years old?').toLowerCase();
+  console.log('users age:' + age);
 
   if (age === 'yes' || age === 'y') {
     alert('Gotch ya ' + userName + '!  I am 38, so I\'m almost there.')
     } else {
     alert('Thank you ' + userName + '.');
-    }
+  }
+}
+questionOne();
 
 //question 2
 var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
