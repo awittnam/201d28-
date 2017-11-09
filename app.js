@@ -54,16 +54,32 @@ var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
     alert('Sorry ' + userName + ', but I\'m classis rock through and through.');
     }
 
-// var kids = prompt('how many kids do you have?');
-// console.log('number of kids:', kids);
-//
-// var hats = prompt('how many hats do you own?');
-// console.log('number of hats:', hats);
-//
-// if (kids === '4' || kids === '3') {
-//   alert('nice job - u right');
-// }
-//
-// if (hats === '3' && kids === '4') {
-//   alert('nice job again - u rule');
-// }
+//question 6
+//-guess my favorite number
+//only give 4 chances
+//give dynamic feedback to notify 'Too High or Too low'
+var guessNumber = prompt('You\'ve done well up until now ' + userName + ' but we\'re going to take it up a notch.  Let\'s see if you can guess my favorite number.').toLowerCase();
+
+for (var i=0; i<4; i++){
+  console.log(guessNumber[i]);
+    if(guessNumber === '10') {
+    console.log('true', guessNumber);
+    alert('Fantastic, you got it!');
+    //score++;
+    break;
+  } else if (guessNumber > 10) {
+    console.log('too high', guessNumber);
+    alert('Too high, give it another try');
+  } else if (guessNumber < 10) {
+    console.log('too low', guessNumber);
+    alert('Too low, give it another try');
+    } else {
+    console.log('false', guessNumber);
+    alert('Wrong, you have 4 total attempts');
+  }
+}
+
+
+//TO DO:
+//Need seventh question
+//-add score counter to show overall score
