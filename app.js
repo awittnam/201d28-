@@ -5,17 +5,21 @@ console.log('user\'s name:', userName)
   alert('Hello ' + userName + ', it\'s nice to meet you.  In order for you to get to know me a little bit we are going to play a guessing game.  Let\'s get started! ');
 
 //question 1
-var age = prompt(userName + ', do you think I look older than 40 years old?').toLowerCase();
-console.log('users age:' + age);
+function questionOne () {
+  var age = prompt(userName + ', do you think I look older than 40 years old?').toLowerCase();
+  console.log('users age:' + age);
 
   if (age === 'yes' || age === 'y') {
     alert('Gotch ya ' + userName + '!  I am 38, so I\'m almost there.')
     } else {
     alert('Thank you ' + userName + '.');
-    }
+  }
+}
+questionOne();
 
 //question 2
-var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
+function questionTwo () {
+  var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
   console.log('user where:' + where);
 
     if (where === 'yes' || where === 'y') {
@@ -23,9 +27,13 @@ var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
     } else {
     alert('Sorry, I was born and bred in Illinois');
     }
+  }
+
+questionTwo();
 
 //question 3
-var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
+function questionThree() {
+  var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
   console.log('users myDog:' + myDog);
 
     if (myDog === 'yes' || myDog ==='y') {
@@ -33,9 +41,14 @@ var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
     } else {
     alert('Negative, ' + userName + ', my dog Eva is a Golden Retriever.');
     }
+  }
+
+questionThree();
+
 
 //question 4
-var boat = prompt('Did I live on a houseboat for the last two summers?').toLowerCase();
+function questionFour() {
+  var boat = prompt('Did I live on a houseboat for the last two summers?').toLowerCase();
   console.log('users boat:' + boat);
 
     if (boat === 'yes' || boat === 'y') {
@@ -43,6 +56,9 @@ var boat = prompt('Did I live on a houseboat for the last two summers?').toLower
     } else {
     alert('You\'re right ' + userName + ', well done.');
     }
+  }
+questionFour();
+
 
 //question 5
 var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
@@ -83,3 +99,17 @@ for (var i=0; i<4; i++){
 //TO DO:
 //Need seventh question
 //-add score counter to show overall score
+var states = ['illinois', 'texas', 'florida'];
+for (var j=6; j>0;j--){
+  var guessStates= prompt('Let\'s see if you can guess a state that I\'ve lived in.').toLowerCase();
+  console.log(guessStates);
+  if(states.includes(guessStates)){
+    console.log('guessed', state);
+    alert('Wow! You are correct!');
+    alert('I have lived in Illinois, Texas, and Florida!');
+break;
+  }else {
+    console.log('false', guessStates);
+    alert('Wrong, try again. You have 6 total attempts, you  have ' + (j-1) + ' attempts remaining.');
+  }
+}
