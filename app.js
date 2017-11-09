@@ -16,7 +16,7 @@ function questionOne () {
   }
 }
 questionOne();
-h
+
 //question 2
 function questionTwo () {
   var where = prompt(userName + ', did I grow up in the midwest?').toLowerCase();
@@ -32,7 +32,8 @@ function questionTwo () {
 questionTwo();
 
 //question 3
-var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
+function questionThree() {
+  var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
   console.log('users myDog:' + myDog);
 
     if (myDog === 'yes' || myDog ==='y') {
@@ -40,9 +41,14 @@ var myDog = prompt('Do I own a Golden Retriever?').toLowerCase();
     } else {
     alert('Negative, ' + userName + ', my dog Eva is a Golden Retriever.');
     }
+  }
+
+questionThree();
+
 
 //question 4
-var boat = prompt('Did I live on a houseboat for the last two summers?').toLowerCase();
+function questionFour() {
+  var boat = prompt('Did I live on a houseboat for the last two summers?').toLowerCase();
   console.log('users boat:' + boat);
 
     if (boat === 'yes' || boat === 'y') {
@@ -50,6 +56,9 @@ var boat = prompt('Did I live on a houseboat for the last two summers?').toLower
     } else {
     alert('You\'re right ' + userName + ', well done.');
     }
+  }
+questionFour();
+
 
 //question 5
 var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
