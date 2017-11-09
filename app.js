@@ -61,7 +61,8 @@ questionFour();
 
 
 //question 5
-var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
+function questionFive() {
+  var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
   console.log('users music:' + music);
 
     if (music === 'yes' || music === 'y') {
@@ -69,32 +70,36 @@ var music = prompt('Do I primarily listed to classis rock?').toLowerCase();
     } else {
     alert('Sorry ' + userName + ', but I\'m classis rock through and through.');
     }
+  }
 
+questionFive();
 //question 6
 //-guess my favorite number
 //only give 4 chances
 //give dynamic feedback to notify 'Too High or Too low'
-var guessNumber = prompt('You\'ve done well up until now ' + userName + ' but we\'re going to take it up a notch.  Let\'s see if you can guess my favorite number.').toLowerCase();
 
-for (var i=0; i<4; i++){
-  console.log(guessNumber[i]);
-    if(guessNumber === '10') {
-    console.log('true', guessNumber);
-    alert('Fantastic, you got it!');
-    //score++;
-    break;
-  } else if (guessNumber > 10) {
-    console.log('too high', guessNumber);
-    alert('Too high, give it another try');
-  } else if (guessNumber < 10) {
-    console.log('too low', guessNumber);
-    alert('Too low, give it another try');
-    } else {
-    console.log('false', guessNumber);
-    alert('Wrong, you have 4 total attempts');
+function questionSix() {
+  var guessNumber = prompt('You\'ve done well up until now ' + userName + ' but we\'re going to take it up a notch.  Let\'s see if you can guess my favorite number.').toLowerCase();
+
+  for (var i=0; i<4; i++){
+    console.log(guessNumber[i]);
+      if(guessNumber === '10') {
+      console.log('true', guessNumber);
+      alert('Fantastic, you got it!');
+      //score++;
+      break;
+    } else if (guessNumber > 10) {
+      console.log('too high', guessNumber);
+      alert('Too high, give it another try');
+    } else if (guessNumber < 10) {
+      console.log('too low', guessNumber);
+      alert('Too low, give it another try');
+      } else {
+      console.log('false', guessNumber);
+      alert('Wrong, you have 4 total attempts');
+    }
   }
 }
-
 
 //TO DO:
 //Need seventh question
